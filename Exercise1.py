@@ -9,9 +9,9 @@ def guess():
     while True:
         try:
             num = int(input("Guess a number: "))
-            trying_time = trying_time + 2
+            trying_time = trying_time + 1
             if num == right_number:
-                print("Congrats!!! You guessed the right number")
+                print("Congrats!!! You guessed the right number\nYou try {}".format(trying_time))
                 break
             elif num < right_number:
                 print("Your number is lowest")
